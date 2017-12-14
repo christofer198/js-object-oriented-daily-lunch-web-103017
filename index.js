@@ -12,21 +12,21 @@ class Customer{
     store.customers.push(this)
   }
 
-  meals(){
-    return this.deliveries().map(each => {
-      return each.meal();
-    });
-  }
-
-  deliveries(){
-    return store.deliveries.filter(each => {
-      return each.customerId === this.id
-    });
-  }
-
-  totalSpent(){
-    return this.meals().price
-  }
+  totalSpent() {
+   return this.meals().reduce(function(sum, meal) {
+     return sum + meal.price;
+   }, 0);
+ }
+ deliveries() {
+   return store.deliveries.filter(delivery => {
+     return delivery.customerId == this.id;
+   });
+ }
+ meals() {
+   return this.deliveries().map(delivery => {
+     return delivery.meal();
+   });
+ }
 }
 
 class Meal{
