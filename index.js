@@ -27,7 +27,7 @@ class Customer{
   totalSpent(){
     let price = []
     this.meals().map(each => {
-      price.push(each.price)
+      price.push(each)
     })
 
     return price
