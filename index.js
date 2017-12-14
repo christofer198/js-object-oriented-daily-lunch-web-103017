@@ -94,7 +94,7 @@ class Employer{
   }
 
   deliveries(){
-    let allDeliveries=  this.employees().map(each => {
+    let allDeliveries = this.employees().map(each => {
       return each.deliveries();
     });
     let merged = [].concat.apply([], allDeliveries);
@@ -102,7 +102,7 @@ class Employer{
   }
 
   meals(){
-
+    return this.deliveries()
   }
 
   mealTotals(){
