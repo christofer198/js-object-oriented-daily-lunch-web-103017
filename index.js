@@ -106,7 +106,7 @@ class Employer{
       return each.meal();
     });
 
-    let merged = [].concat.apply([], allDeliveries);
+    let merged = [].concat.apply([], allMeals);
     return merged
   }
 
