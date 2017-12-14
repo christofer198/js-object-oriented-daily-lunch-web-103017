@@ -2,7 +2,7 @@ let customerId = 0
 let mealId = 0
 let deliveryId = 0
 let employerId = 0
-let store = {delivery: [], customers: []}
+let store = {deliveries: [], customers: []}
 
 class Customer{
   constructor(name, employer){
@@ -13,7 +13,7 @@ class Customer{
   }
 
   meals(){
-
+    this.
   }
 
   deliveries(){
@@ -50,7 +50,7 @@ class Delivery(){
     this.meal = meal.id
     this.customer = customer.id
     this.id = ++deliveryId
-    store.delivery.push(this)
+    store.deliveries.push(this)
   }
 
   meal(){
@@ -82,7 +82,7 @@ class Employer{
   }
 
   meals(){
-    
+
   }
 
   mealTotals(){
