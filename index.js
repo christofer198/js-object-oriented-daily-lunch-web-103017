@@ -73,31 +73,31 @@ class Delivery{
   }
 }
 
-//
-// class Employer{
-//   constructor(name){
-//     this.name = name
-//     this.id = ++employerId
-//   }
-//
-//   employees(){
-//     return store.customers.filter(each => {
-//       return each.employer === this.id
-//     });
-//   }
-//
-//   deliveries(){
-//     return this.employees().map(each => {
-//       return each.deliveries();
-//     });
-//   }
-//
-//   meals(){
-//
-//   }
-//
-//   mealTotals(){
-//
-//   }
-//
-// }
+
+class Employer{
+  constructor(name){
+    this.name = name
+    this.id = ++employerId
+  }
+
+  employees(){
+    return store.customers.filter(each => {
+      return each.employer === this.id
+    });
+  }
+
+  deliveries(){
+    return this.employees().map(each => {
+      return each.deliveries();
+    });
+  }
+
+  meals(){
+
+  }
+
+  mealTotals(){
+
+  }
+
+}
