@@ -55,8 +55,8 @@ class Delivery(){
   }
 
   meal(){
-    return store.meals.filter(each => {
-      return each.id === this.meal
+    return store.meals.filter(eachMeal => {
+      return eachMeal.id === this.meal
     })
   }
 
