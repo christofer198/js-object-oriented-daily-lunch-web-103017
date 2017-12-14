@@ -54,7 +54,7 @@ let store = { deliveries: [], employers: [], customers: [], meals: [] };
 //   }
 //}
 
-class Delivery(){
+class Delivery{
   constructor(meal = {}, customer = {}) {
     this.mealId = meal.id;
     this.customerId = customer.id;
