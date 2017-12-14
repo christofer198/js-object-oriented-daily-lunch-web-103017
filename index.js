@@ -62,7 +62,7 @@ class Delivery(){
 
   customer(){
     return store.customers.filter(eachCustomer => {
-      
+      return eachCustomer.id === this.customer
     });
   }
 
