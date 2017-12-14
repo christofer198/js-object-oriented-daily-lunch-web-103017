@@ -25,12 +25,9 @@ class Customer{
   }
 
   totalSpent(){
-    let price = []
-    this.meals().map(each => {
-      price.push(each)
-    })
-
-    return price
+    return this.meals().reduce(function(sum, meal) {
+      return sum + meal.price;
+    }, 0);
   }
 }
 
