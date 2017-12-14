@@ -13,7 +13,7 @@ class Customer{
   }
 
   meals(){
-    return store.deliveries().map(each => {
+    return this.deliveries().map(each => {
       if(each.customer === this.customer){
         each.meal()
       }
