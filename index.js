@@ -76,11 +76,13 @@ class Employer{
   }
 
   deliveries(){
-
+    return this.employees().map(each => {
+      return each.deliveries();
+    });
   }
 
   meals(){
-
+    
   }
 
   mealTotals(){
