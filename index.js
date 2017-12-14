@@ -13,7 +13,9 @@ class Customer{
   }
 
   meals(){
-    //
+    return store.deliveries.filter(each => {
+      return each.meal()
+    });
   }
 
   deliveries(){
