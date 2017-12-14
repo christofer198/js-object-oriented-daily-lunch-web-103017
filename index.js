@@ -5,7 +5,7 @@ let employerId = 0
 let store = { deliveries: [], employers: [], customers: [], meals: [] };
 //
 class Customer{
-  constructor(name, employer){
+  constructor(name, employer = {}){
     this.name = name
     this.employer = employer.id
     this.id = ++customerId
