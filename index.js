@@ -54,6 +54,26 @@ let store = { deliveries: [], employers: [], customers: [], meals: [] };
 //   }
 //}
 
+class Delivery(){
+  constructor(meal = {}, customer = {}){
+    this.meal = meal.id
+    this.customer = customer.id
+    this.id = ++deliveryId
+    store.deliveries.push(this)
+  }
+
+  meal(){
+    return store.meals.filter(eachMeal => {
+      return eachMeal.id === this.meal
+    });
+  }
+
+  customer(){
+    return store.customers.filter(eachCustomer => {
+      return eachCustomer.id === this.customer
+    });
+  }
+}
 class Delivery {
   constructor(meal = {}, customer = {}) {
     this.mealId = meal.id;
