@@ -14,7 +14,7 @@ class Customer{
 
   meals(){
     return this.deliveries().map(each => {
-      return each.meal 
+      return each.meal
     });
   }
 
@@ -25,9 +25,7 @@ class Customer{
   }
 
   totalSpent(){
-    return this.meals().reduce(function(sum, meal) {
-      return sum + meal.price;
-    }, 0);
+    return this.meals()
   }
 }
 
