@@ -106,9 +106,8 @@ class Employer{
       return each.meal();
     });
 
-    let merged = [].concat.apply([], allMeals);
-    let r = new Set(merged)
-    return r
+    let merged = [...new Set(allMeals)]
+    return merged
   }
 
   mealTotals(){
