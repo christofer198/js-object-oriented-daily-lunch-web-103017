@@ -29,30 +29,30 @@ let store = { deliveries: [], employers: [], customers: [], meals: [] };
 //   }
 // }
 //
-// class Meal(){
-//   constructor(title, price){
-//     this.title = title
-//     this.price = price
-//     this.id = ++mealId
-//     store.meals.push(this)
-//   }
-//
-//   deliveries(){
-//     return store.deliveries.filter(eachDelivery => {
-//       return eachDelivery.meal === this.id
-//     });
-//   }
-//
-//   customers(){
-//     return this.deliveries().map(each => {
-//       return each.customer()
-//     });
-//   }
-//
-//   static byPrice(){
-//
-//   }
-//}
+class Meal{
+  constructor(title, price){
+    this.title = title
+    this.price = price
+    this.id = ++mealId
+    store.meals.push(this)
+  }
+
+  deliveries(){
+    return store.deliveries.filter(eachDelivery => {
+      return eachDelivery.meal === this.id
+    });
+  }
+
+  customers(){
+    return this.deliveries().map(each => {
+      return each.customer()
+    });
+  }
+
+  static byPrice(){
+
+  }
+}
 
 class Delivery{
   constructor(meal = {}, customer = {}) {
