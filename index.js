@@ -78,6 +78,7 @@ class Employer{
   constructor(name){
     this.name = name
     this.id = ++employerId
+    store.employers.push(this)
   }
 
   employees(){
