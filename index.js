@@ -34,11 +34,15 @@ class Meal(){
   }
 
   deliveries(){
-
+    return store.deliveries.filter(eachDelivery => {
+      return eachDelivery.meal === this.id
+    });
   }
 
   customers(){
-
+    return this.deliveries().map(each => {
+      return each.customer()
+    });
   }
 
   byPrice(){
