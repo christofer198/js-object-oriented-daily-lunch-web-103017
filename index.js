@@ -31,7 +31,6 @@ class Customer{
     })
 
     return price
-    })
   }
 }
 
