@@ -13,7 +13,7 @@ class Customer{
   }
 
   meals(){
-    this.
+    //
   }
 
   deliveries(){
@@ -57,11 +57,13 @@ class Delivery(){
   meal(){
     return store.meals.filter(eachMeal => {
       return eachMeal.id === this.meal
-    })
+    });
   }
 
   customer(){
-
+    return store.customers.filter(eachCustomer => {
+      
+    });
   }
 
 }
