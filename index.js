@@ -29,9 +29,8 @@ class Customer{
     this.meals().map(each => {
       price.push(each.price)
     });
-    
-    return price.reduce(function(a, b){
-      return a+b
+
+    return price
     })
   }
 }
