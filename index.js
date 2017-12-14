@@ -4,31 +4,31 @@ let deliveryId = 0
 let employerId = 0
 let store = { deliveries: [], employers: [], customers: [], meals: [] };
 //
-// class Customer{
-//   constructor(name, employer){
-//     this.name = name
-//     this.employer = employer.id
-//     this.id = ++customerId
-//     store.customers.push(this)
-//   }
-//
-//   meals(){
-//     return store.deliveries.filter(each => {
-//       if(each.customer === this.customer){
-//         each.meal()
-//       }
-//     });
-//   }
-//
-//   deliveries(){
-//
-//   }
-//
-//   totalSpent(){
-//
-//   }
-// }
-//
+class Customer{
+  constructor(name, employer){
+    this.name = name
+    this.employer = employer.id
+    this.id = ++customerId
+    store.customers.push(this)
+  }
+
+  meals(){
+    return store.deliveries.filter(each => {
+      if(each.customer === this.customer){
+        each.meal()
+      }
+    });
+  }
+
+  deliveries(){
+
+  }
+
+  totalSpent(){
+
+  }
+}
+
 class Meal{
   constructor(title, price){
     this.title = title
