@@ -10,6 +10,18 @@ class Customer{
     this.employer = employer
     this.id = ++customerId
   }
+
+  meals(){
+
+  }
+
+  deliveries(){
+
+  }
+
+  totalSpent(){
+    
+  }
 }
 
 class Meal(){
@@ -27,6 +39,7 @@ class Delivery(){
     this.id = ++deliveryId
     store.deliveries.push(this)
   }
+
 }
 
 class Employer{
