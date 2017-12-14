@@ -25,7 +25,7 @@ class Customer{
   }
 
   totalSpent(){
-    return this.meals()
+    return this.meals().price
   }
 }
 
