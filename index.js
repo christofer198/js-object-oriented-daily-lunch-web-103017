@@ -21,7 +21,9 @@ class Customer{
   }
 
   deliveries(){
-
+    return store.deliveries.filter(each => {
+      return each.customerId === this.id
+    });
   }
 
   totalSpent(){
