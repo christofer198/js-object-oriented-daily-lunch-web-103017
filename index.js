@@ -55,7 +55,9 @@ class Delivery(){
   }
 
   meal(){
-
+    return store.meals.filter(each => {
+      return each.id === this.meal
+    })
   }
 
   customer(){
