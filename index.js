@@ -102,7 +102,7 @@ class Employer{
   }
 
   meals(){
-    return this.deliveries()
+    return this.deliveries().concat()
   }
 
   mealTotals(){
