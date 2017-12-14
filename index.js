@@ -56,10 +56,10 @@ let store = { deliveries: [], employers: [], customers: [], meals: [] };
 
 class Delivery(){
   constructor(meal = {}, customer = {}){
-    this.meal = meal.id
-    this.customer = customer.id
-    this.id = ++deliveryId
-    store.deliveries.push(this)
+    this.meal = meal.id;
+    this.customer = customer.id;
+    this.id = ++deliveryId;
+    store.deliveries.push(this);
   }
 
   meal(){
