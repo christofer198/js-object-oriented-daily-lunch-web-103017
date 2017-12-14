@@ -72,24 +72,6 @@ class Delivery{
     });
   }
 }
-// class Delivery {
-  // constructor(meal = {}, customer = {}) {
-  //   this.mealId = meal.id;
-  //   this.customerId = customer.id;
-  //   this.id = ++deliveryId;
-  //   store.deliveries.push(this);
-  // }
-//   meal() {
-//     return store.meals.find(meal => {
-//       return meal.id === this.mealId;
-//     });
-//   }
-//   customer() {
-//     return store.customers.find(customer => {
-//       return customer.id === this.customerId;
-//     });
-//   }
-// }
 
 //
 // class Employer{
