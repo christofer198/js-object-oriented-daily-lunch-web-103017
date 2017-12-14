@@ -13,8 +13,10 @@ class Customer{
   }
 
   meals(){
-    return store.deliveries.map(each => {
-      return each.meal()
+    return store.deliveries.filter(each => {
+      if(each.customer === this.customer){
+        each.meal()
+      }
     });
   }
 
