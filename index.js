@@ -45,7 +45,7 @@ class Meal(){
     });
   }
 
-  byPrice(){
+  static byPrice(){
 
   }
 }
