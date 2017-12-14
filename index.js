@@ -111,6 +111,10 @@ class Employer{
   }
 
   mealTotals(){
+    let mealHash = {}
+    this.deliveries().map(each => {
+      mealHash[each.mealId] += 1
+    })
 
   }
 
