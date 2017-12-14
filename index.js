@@ -41,7 +41,7 @@ class Meal{
 
   deliveries(){
     return store.deliveries.filter(eachDelivery => {
-      return eachDelivery.meal === this.id
+      return eachDelivery.mealId === this.id
     });
   }
 
