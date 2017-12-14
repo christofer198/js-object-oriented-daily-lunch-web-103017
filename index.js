@@ -28,7 +28,7 @@ class Customer{
     let price = []
     this.meals().map(each => {
       price.push(each.price)
-    });
+    })
 
     return price
     })
