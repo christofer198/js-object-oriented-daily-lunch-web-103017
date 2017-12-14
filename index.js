@@ -114,7 +114,7 @@ class Employer{
     let mealHash = {}
     this.deliveries().map(each => {
       mealHash[each.mealId] += 1
-    })
+    });
 
   }
 
